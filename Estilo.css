@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root { 
+--Pale--blue: hsl(225, 100%, 94%);
+--Bright--blue: hsl(245, 75%, 52%);
+--Very--pale--blue: hsl(225, 100%, 98%);
+--Desaturated--blue: hsl(224, 23%, 55%);
+--Dark--blue: hsl(223, 47%, 23%);
+}
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale--blue);
+    height: 10px;
+}
+.container-flex { 
+     display: flex; 
+     justify-content: center;  
+     align-items: center; 
+     height: 100vh;
+
+}
+.Card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    width: 450px;
+}
+.Card__Img { 
+    border-radius: 15px 15px 0px 0px;
+}
+.Card__Info { 
+      padding: 30px;  /* modificar para el border */
+/*    outline: 3px black solid;  */
+   background-color: white;
+   border-radius: 0px 0px 15px 15px;
+}
+.Card__Cabeza { 
+    text-align: center;
+    
+    
+}
+.Card__Titulo { 
+    color: var(--Dark--blue);
+    font-weight: bold;
+    font-size: 26px;
+}
+.Card__texto { 
+    color: var(--Desaturated--blue);
+    margin: 20px 15px 0px 15px;
+}
+.Card__Vip {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 30px 0px 30px;
+    border-radius: 5px;
+    background-color: var(--Very--pale--blue);
+    height: 70px;
+
+}
+.Card__Icon { 
+    width: 42px;
+    height: 42px;
+    margin: 10px 0px 0px 25px;
+}
+.Card__Vip__Margin { 
+    margin: 10px 70px 0px 20px;
+}
+.Card__Change {
+    margin: 20px 0px 0px 0px;
+    color: var(--Bright--blue);
+}
+.Card__Change:hover {
+    text-decoration: none;
+    color: hsl(256, 100%, 65%);
+}
+.Card__Buy { 
+    display: block;
+    margin: 30px 0px 0px 30px;
+}
+.Card__Btn {
+    height: 45px;
+    width: 330px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Bright--blue);
+    color: white;
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 1px 24px 52px -17px rgba(0,38,247,1);
+}
+.Card__Btn:hover { 
+    background-color: hsl(256, 100%, 65%);
+}
+.Card__Cancel { 
+    color: var(--Desaturated--blue);
+    margin: 0px 0px 0px 110px;
+    cursor: pointer;
+}
+.Card__Cancel:hover { 
+    color: rgb(34, 33, 33);
+    font-weight: 700;
+
+}
+@media screen and (max-width:1024px){
+    body { 
+    background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+}
